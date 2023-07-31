@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/DongAJul_APP/static/css/main.073c9b0a.css",
-    "main.js": "/DongAJul_APP/static/js/main.3507e673.js",
+    "main.js": "/DongAJul_APP/static/js/main.36130c19.js",
     "static/js/787.7ec4e634.chunk.js": "/DongAJul_APP/static/js/787.7ec4e634.chunk.js",
     "static/media/logo.svg": "/DongAJul_APP/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/DongAJul_APP/index.html",
     "main.073c9b0a.css.map": "/DongAJul_APP/static/css/main.073c9b0a.css.map",
-    "main.3507e673.js.map": "/DongAJul_APP/static/js/main.3507e673.js.map",
+    "main.36130c19.js.map": "/DongAJul_APP/static/js/main.36130c19.js.map",
     "787.7ec4e634.chunk.js.map": "/DongAJul_APP/static/js/787.7ec4e634.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.3507e673.js"
+    "static/js/main.36130c19.js"
   ]
 }
