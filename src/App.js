@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { GoogleLogin } from '@react-oauth/google';
 import { GoogleOAuthProvider } from '@react-oauth/google';
+import { BroswerRouter as Router, Routes, Route } from 'react-router-dom';
+import Chat from './Chat';
 
 function App() {
 
@@ -14,6 +16,9 @@ function App() {
             buttonText="google login"
             onSuccess={(credentialResponse) => {
               console.log(credentialResponse);
+                <Routes>
+                  <Route path="/chat" element={<Chat />}></Route>
+                </Routes>
             }}
             onError={() => {
               console.log('LOGIN FAILED');
