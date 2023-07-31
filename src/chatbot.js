@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
 const API_ENDPOINT = 'https://api.openai.com/v1/chat/completions'; // API endpoint for the GPT-3.5 model
-const API_KEY = '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';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function Chatbot() {
   const [messages, setMessages] = useState([]);
