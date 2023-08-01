@@ -9,4 +9,5 @@ const Main = () => {
         navigate('/chat')
     }, []);
 }
+
 export default Main;

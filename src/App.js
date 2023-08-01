@@ -40,10 +40,10 @@ function App() {
   };
 
   return (
-    // console.log('user', user),
-    // console.log('profile', profile),
     <div>
       {profile ? (
+        // console.log('user', user),
+        // console.log('profile', profile),
         <Routes>
           <Route exact path="/DongAJul_APP" element={<Main />} />
           <Route exact path="/chat" element={<Chat />} />
@@ -63,4 +63,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
