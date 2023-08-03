@@ -14,6 +14,22 @@ function App() {
     onError: (error) => console.log('Login Failed:', error),
   });
 
+  useEffect(() => {
+    //post 메서드
+    if (profile) {
+      axios
+        .post("url", {
+          email:profile.email
+        })
+        .then((response) => {
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+    }
+  }, [profile])
+
   useEffect(
     () => {
       if (user) {
