@@ -6,6 +6,9 @@ import Main from './Main'
 import Chat from './Chat'
 
 function App() {
+
+  const baseurl = "http://localhost:8080";
+
   const [user, setUser] = useState(null);
   const [profile, setProfile] = useState(null);
 
@@ -18,7 +21,7 @@ function App() {
     //post 메서드
     if (profile) {
       axios
-        .post("url", {
+        .post(baseurl + "url", {
           email:profile.email
         })
         .then((response) => {
