@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Routes, Route } from 'react-router-dom'
 import Main from './Main'
 import Chat from './Chat'
+import PDFExtract from './PDFExtract';
 
 function App() {
 
@@ -18,7 +19,6 @@ function App() {
   });
 
   useEffect(() => {
-    //post 메서드
     if (profile) {
       axios
         .post(baseurl + "url", {
@@ -27,14 +27,11 @@ function App() {
         .then((response) => {
           console.log(response.data);
         })
-        .catch((error) => {
-          console.log(error);
-        })
+        .catch((error) => console.log(error));
     }
   }, [profile])
 
-  useEffect(
-    () => {
+  useEffect(() => {
       if (user) {
         axios
           .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
@@ -66,6 +63,7 @@ function App() {
         <Routes>
           <Route exact path="/DongAJul_APP" element={<Main />} />
           <Route exact path="/chat" element={<Chat />} />
+          <Route exact path="pdfextract" element={<PDFExtract />} />
         </Routes>
         // <div>
         //     <img src={profile.picture} alt="user image" />

@@ -1,13 +1,14 @@
 import React from 'react';
+import { useState, useRef } from 'react'
 import Chatbot from './chatbot';
+import './Chat.css'
 
-function Chat(props) {
-    return (
+function Chat({messages, handleSendMessage}) {
+  return (
     <div>
-      <h1>Chatbot</h1>
-      <Chatbot />
+      <Chatbot></Chatbot>
     </div>
-    );
+  );
 };
 
-export default Chat
+export default Chat;
